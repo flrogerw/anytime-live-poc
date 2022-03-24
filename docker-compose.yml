@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  postgres:
+   image: mdillon/postgis
+   restart: always
+   environment:
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: postgres
+   ports:
+    - 5432:5432
+   volumes:
+      - ./backend/database:/docker-entrypoint-initdb.d
+    
+  frontend:
+    image: poc/anytime
+    env_file:
+        ".env"
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./src:/usr/app/src:consistent
+    ports:
+      - "3000:3000"
+
+  backend:
+    image: poc/anytime_backend
+    env_file:
+        "./backend/.env"
+    build:
+      context: ./backend
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./backend/database/knex:/usr/app/knex:consistent
+      - ./backend/src:/usr/app/src:consistent
+    ports:
+      - "5000:5000"

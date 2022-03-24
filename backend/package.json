@@ -1,0 +1,23 @@
+{
+  "name": "anytime_backend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.22.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.95.11",
+    "pg": "^8.7.1",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "seed-db": "knex --knexfile ./database/config/knexfile.js seed:run",
+    "migrate": "knex --knexfile ./database/config/knexfile.js migrate:latest"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

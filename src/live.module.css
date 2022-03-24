@@ -1,0 +1,535 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+body {
+    background-image: url(https://s3.lightboxcdn.com/vendors/866a4bc0-3b71-4f03-9792-4693cb6904c0/uploads/8251314b-a0cb-4210-8c22-b7b80edabfb8/BrandSlider1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+::placeholder {
+    color: white;
+    opacity: .3; /* Firefox */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vh;
+    font-weight: lighter;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: white;
+  }
+
+ video {
+    object-fit: cover;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+  }
+
+.container {
+    padding: 10px;
+    height: 700px;
+}
+.button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.5vw;
+    color: rgb(249, 248, 252);
+    border-style: solid;
+    border-width: 2px;
+    border-color: #582CD1;
+    border-radius: 5px;
+    background-color: #582CD1;
+    width: 100%;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.room_list_item {
+    cursor: pointer;
+    margin-bottom: 4px;
+    border: solid 2px white;
+    border-radius: 15px;
+    padding-top: 8px;
+    padding-left: 2vw;
+    height: 10vw;
+}
+
+.room_list_item_text {
+    color: white;
+    padding: 5px;
+    display: inline-block;
+    font-size:5vw;
+    margin-left: 4.5vw;
+}
+
+.room_list_room_name {
+    color: white;
+    font-style: italic;
+    font-size: 2.5vw;
+    float: right;
+}
+
+.room_list_item img{
+    width: 9vw; /* width of container */
+    height: 9vw; /* height of container */
+    object-fit: cover;
+    float: left;
+    border-radius: 50%;
+}
+
+.room_list_header {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4vw;
+    color: white;
+    letter-spacing: inherit;
+    line-height: 6vw;
+    font-style: italic;
+    margin-top: 1vw;
+}
+
+.logo_image_div {
+    width: 26vw;
+    height: 26vw;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.client_main_div {
+    width: 80vw;
+    height: 35vh;
+    margin: auto;
+}
+
+.logo_image_div_spinner{
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top:90px;
+    left: 175px;
+}
+
+.logo_image_div_img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo_description_div {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 16px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.logo_header_div {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 2vh;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 5px;
+    text-align: center;
+    min-height: 24px;
+}
+
+.controlButton {
+    cursor: pointer;
+    float:left;
+    margin: 0px 10px;
+    position: relative;
+}
+
+.controlButton img{
+    height: 30px; /* height of container */
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo_overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 40vh;
+    height: 39vh;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin: auto;
+    padding-top: 2vh;
+}
+.controlImage {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.room_display_name {
+    background-color: transparent;
+    border: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(249, 248, 252);
+    width: 80%;
+    height: 50px;
+    margin:auto;
+    padding-left: 2vw;
+}
+
+.client_instruct {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.client_header {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 42px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+}
+
+.client_blurb {
+    font-style: normal;
+}
+
+.room_list {
+    width: 80vw;
+    height: 40vw;
+    margin: auto;
+    padding: 5px;
+}
+
+.join_button_div {
+    width: 300px;
+    margin: auto;
+}
+
+.end_button_div {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    margin: auto;
+    padding: 2vw;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(248,80,4,1));
+}
+
+.end_button {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.5vw;
+    color: #582CD1;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #582CD1;
+    border-radius: 5px;
+    background: transparent;
+    
+    height: 4vh;
+    cursor: pointer;
+    margin-left: 3vw;
+}
+
+
+.role_select {
+    width: 60vw;
+    margin: auto;
+}
+
+.bottom_div {
+    position: absolute;
+    left: 0;
+    margin: auto;
+    width: 100vw;
+}
+
+.video_hide {
+    display: none;
+}
+
+.video_div {
+    min-height: 250px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    margin: auto;
+    width: 90vw;
+ 
+}
+
+.event_box {
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.controlbar {
+    min-height: 60px;
+}
+
+.info_div {
+    width: 80vw;
+    margin: auto;
+}
+
+.ad_image {
+    width: 90vw;
+    height: 90vw;
+    background-image: url("images/coke_ad.png");
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: .2;
+    display: none;
+}
+
+.ad_bug {
+    width: 10vw;
+    height: 10vw;
+    background-image: url("images/pepsi_ad.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    right: 5%;
+    bottom: 22%;
+}
+
+.user_name_login {
+    background-color: transparent;
+    border: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(249, 248, 252);
+    width: 60vw;
+    height: 4vh;
+    margin:auto;
+    padding: 2vw;
+}
+
+.chat_input {
+    border: none;
+    background-color: transparent;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(249, 248, 252);
+    width: 75vw;
+    height: 3vh;
+    margin:auto;
+    padding: 2vw;
+}
+
+.send_chat_btn {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+}
+
+.member_list_item_text {
+    color: white;
+    padding: 5px;
+    display: inline-block;
+    font-size:5vw;
+    margin-left: 4.5vw;
+    width: 80vw;
+}
+
+.member_list_item {
+    cursor: pointer;
+    margin-bottom: 4px;
+    border: solid 2px white;
+    border-radius: 15px;
+    padding-top: 8px;
+    padding-left: 2vw;
+    height: 10vw;
+}
+
+.member_list_item_left {
+    float: left;
+    width: 37vw;
+    margin-right: 20px;
+}
+
+.member_list_item_box {
+    float: left;
+    width: 10vw;
+    margin-right: 50x;
+}
+
+.chat_box {
+    width: 100vw;
+    margin: auto;
+    color: bisque;
+    padding-left: 5px;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center; 
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5); 
+}
+
+.col_2 {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.col_10 {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.list_group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: .4rem;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: .5rem 1rem;
+    color: #212529;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #888;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .4rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.ms-1 {
+    margin-left: .25rem!important;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #888;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .4rem;
+}
+
+.window_main {
+    height: 20vh;
+    width: 93vw;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+}
+
+.fw-bold {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.room_display_name::placeholder,
+.room_display_name::-webkit-input-placeholder,
+.room_display_name:-ms-input-placeholder,
+.room_display_name::-ms-input-placeholder {
+    color: rgb(249, 248, 252);
+}
