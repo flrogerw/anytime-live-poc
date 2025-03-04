@@ -58,7 +58,7 @@ class Client extends Component {
       room_name: current.mod_id,
     };
     const response = await axios.post(`${process.env.REACT_APP_API_URL}/live/guest/get_token`, request);
-    const authHeader = { headers: { 'Authorization': 'cc326de8-c5c8-46ff-b34b-b5cbe598f764' } };
+    const authHeader = { headers: { 'Authorization': 'XXXXXXXXXXXXXXXXXXXXXXXXXX' } };
     const chatResponse = await axios.post(`${process.env.REACT_APP_API_URL}/live/chat/get_token`, request, authHeader);
     this.setState(state => (state.current.chat_token = chatResponse.data.token, state));
     this.setState(state => (state.current.token = response.data.token, state));
